@@ -60,9 +60,9 @@ def calculate_tax(income):
     elif income <= 3200000:
         return 116000 + (income - 2200000) * 0.23
     elif income <= 4100000:
-        return 346000 + (income - 3200000) * 0.35
+        return 346000 + (income - 3200000) * 0.30
     else:
-        return 661000 + (income - 4100000) * 0.35
+        return 616000 + (income - 4100000) * 0.35
 
 annual_tax = calculate_tax(taxable_income)
 monthly_tax = round(annual_tax / 12)
